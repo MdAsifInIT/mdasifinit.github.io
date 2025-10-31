@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Projects — Asif</title>
+  <meta name="description" content="Explore Asif's PowerShell automation, Windows deployment, and application packaging projects.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="page-header">
+      <h1>Projects</h1>
+      <p>PowerShell Automation | Windows Deployment | System Solutions</p>
+    </section>
+    
+    <section class="page-content">
+      <div class="projects-showcase">
+        
+        <div class="project-detail">
+          <h3>SCCM Console Self-Elevation Script</h3>
+          <div class="project-meta">
+            <div class="tech-tags">
+              <span>PowerShell</span>
+              <span>SCCM</span>
+              <span>Windows Security</span>
+              <span>Error Handling</span>
+            </div>
+          </div>
+          <p><strong>Challenge:</strong> IT administrators needed seamless privilege escalation for SCCM Console operations without manual UAC prompts disrupting workflow.</p>
+          <p><strong>Solution:</strong> Developed a PowerShell script that automatically detects current privilege level, performs self-elevation when needed, and includes robust error handling for common elevation failures (error code -2147024894). The script features session testing capabilities and maintains context across privilege boundaries.</p>
+          <p><strong>Impact:</strong> Reduced manual intervention by 90% and eliminated workflow interruptions for system administrators managing enterprise deployments.</p>
+        </div>
+
+        <div class="project-detail">
+          <h3>Cross-User Registry Manager</h3>
+          <div class="project-meta">
+            <div class="tech-tags">
+              <span>PowerShell</span>
+              <span>Registry</span>
+              <span>User Profiles</span>
+              <span>PSADT</span>
+            </div>
+          </div>
+          <p><strong>Challenge:</strong> Need to apply registry modifications across all user profiles (HKCU) on enterprise workstations, including users who weren't currently logged in.</p>
+          <p><strong>Solution:</strong> Created a comprehensive PowerShell function using PSADT-style architecture that enumerates all user profiles, loads registry hives, applies changes systematically, and creates Active Setup entries for future users. Includes validation and rollback capabilities.</p>
+          <p><strong>Impact:</strong> Enabled consistent application settings deployment across enterprise environment with 100% user coverage, regardless of login state.</p>
+        </div>
+
+        <div class="project-detail">
+          <h3>Application Packaging Automation</h3>
+          <div class="project-meta">
+            <div class="tech-tags">
+              <span>MSI</span>
+              <span>InstallShield</span>
+              <span>SCCM</span>
+              <span>Intune</span>
+            </div>
+          </div>
+          <p><strong>Challenge:</strong> Manual application packaging was time-intensive and error-prone, with inconsistent deployment outcomes across different target environments.</p>
+          <p><strong>Solution:</strong> Built an automated packaging pipeline that processes applications through standardized transforms, applies enterprise-specific customizations, and generates deployment-ready packages with proper MST configurations. Includes validation testing and deployment verification.</p>
+          <p><strong>Impact:</strong> Reduced packaging time by 70% while improving deployment success rates and maintaining consistent application configurations across the enterprise.</p>
+        </div>
+
+        <div class="project-detail">
+          <h3>Driver Management Automation</h3>
+          <div class="project-meta">
+            <div class="tech-tags">
+              <span>DPInst</span>
+              <span>PnPUtil</span>
+              <span>SQL Server</span>
+              <span>Mass Deployment</span>
+            </div>
+          </div>
+          <p><strong>Challenge:</strong> Legacy driver cleanup and installation across diverse hardware configurations required manual intervention and often failed silently.</p>
+          <p><strong>Solution:</strong> Developed driver management scripts using DPInst and pnputil with force switches for silent operations. Integrated with SQL Server removal automation for comprehensive system cleanup scenarios.</p>
+          <p><strong>Impact:</strong> Achieved reliable, silent driver deployment with comprehensive cleanup capabilities for enterprise hardware refresh projects.</p>
+        </div>
+
+        <div class="project-detail">
+          <h3>JSON-Powered Configuration Manager</h3>
+          <div class="project-meta">
+            <div class="tech-tags">
+              <span>PowerShell</span>
+              <span>JSON</span>
+              <span>Configuration Management</span>
+              <span>Automation</span>
+            </div>
+          </div>
+          <p><strong>Challenge:</strong> Configuration data scattered across multiple files made script maintenance difficult and error-prone for complex deployment scenarios.</p>
+          <p><strong>Solution:</strong> Created a PowerShell function that reads variables from JSON configuration files at script initialization, enabling centralized configuration management and easy parameter modification without script changes.</p>
+          <p><strong>Impact:</strong> Simplified configuration management and reduced deployment errors by centralizing all variable data in easily maintainable JSON format.</p>
+        </div>
+
+        <nav class="page-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Asif. Built with care for the IT community.</p>
+  </footer>
+</body>
+</html>
